@@ -6,20 +6,6 @@ import { LineController, LineElement, PointElement, LinearScale, CategoryScale }
 
 Chart.register(LineController, LineElement, PointElement, LinearScale, CategoryScale);
 
-const data = {
-    labels: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni'],
-    datasets: [
-        {
-            label: 'Verkaufszahlen',
-            data: [12, 19, 3, 5, 2, 3],
-            fill: false,
-            backgroundColor: 'rgba(75,192,192,0.2)',
-            borderColor: 'rgba(75,192,192,1)',
-            borderWidth: 1
-        }
-    ]
-};
-
 const options = {
     scales: {
         y: {
@@ -33,7 +19,24 @@ const containerStyle = {
     display: 'flex',
     justifyContent: 'center'
 };
-function MyChart() {
+
+type MyChartProps = {
+    counter: number;
+};
+function MyChart({ counter }: MyChartProps) {
+    const data = {
+        labels: ['Test', 'Test2'],
+        datasets: [
+            {
+                label: 'Verkaufszahlen',
+                data: [...Array(2)].map(() => counter),
+                fill: false,
+                backgroundColor: 'rgba(75,192,192,0.2)',
+                borderColor: 'rgba(75,192,192,1)',
+                borderWidth: 1
+            }
+        ]
+    };
 
     return <div style={containerStyle}>
         <Line data={data} options={options} />
