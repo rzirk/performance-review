@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <div className="container content">
       <h1>Welcome to Tauri!</h1>
 
       <div className="row">
