@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/tauri";
 import "./App.css";
-import Counter from "./components/Tracker/Counter/Counter";
+import MyDashboard from "./components/Tracker/Dashboard/MyDashboard.tsx";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -31,7 +31,7 @@ function App() {
 
       <p>Click on the Tauri, Vite, and React logos to learn more.</p>
 
-      <Counter></Counter>
+      <MyDashboard></MyDashboard>
 
       <form
         className="row"
