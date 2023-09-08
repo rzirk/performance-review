@@ -14,7 +14,6 @@
     "chart.js": "^4.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@cubejs-client/core": "^0.31.0",
     "react-chartjs-2": "^5.0.0"
   },
   "devDependencies": {
@@ -23,8 +22,6 @@
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.4",
-    "parcel": "^2.6.2",
-    "@types/faker": "5.5.9"
+    "vite": "^4.4.4"
   }
 }
